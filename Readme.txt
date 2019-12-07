@@ -1,4 +1,4 @@
-*Online Marketplace*
+** Online Marketplace **
 
 
 Thanks for downloading this theme!
