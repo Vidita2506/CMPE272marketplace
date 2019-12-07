@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Imperial Boootstrap Template</title>
+  <title>Market Place</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -59,8 +59,8 @@
           <img class="" src="img/logo.png" alt="Imperial">
         </div>
 
-        <h1>Welcome to Imperial studios</h1>
-        <h2>We create <span class="rotating">beautiful graphics, functional websites, working mobile apps</span></h2>
+        <h1>Welcome to Market Place</h1>
+        <h2>We provide <span class="rotating">Fitness services, Gym services, Automobile services, VR-AR services, Software solution, Book store services</span></h2>
         <div class="actions">
           <a href="#about" class="btn-get-started">Get Strated</a>
           <a href="#services" class="btn-services">Our Services</a>
