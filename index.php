@@ -63,7 +63,7 @@
         <h2>We provide <span class="rotating">Fitness services, Gym services, Automobile services, VR-AR services, Software solution, Book store services</span></h2>
         <div class="actions">
           <a href="#about" class="btn-get-started">Get Strated</a>
-          <a href="#services" class="btn-services">Our Services</a>
+          <a href="#services" class="btn-services">Our Services & Products</a>
         </div>
       </div>
     </div>
@@ -123,7 +123,7 @@
         <div class="col-md-12">
           <h3 class="section-title">About Us</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+          <p class="section-description">We provide best service & products</p>
         </div>
       </div>
     </div>
@@ -137,15 +137,9 @@
         <div class="col-md-6 about-content">
           <h2 class="about-title">We provide great services and ideass</h2>
           <p class="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate
-          </p>
-          <p class="about-text">
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-            id est laborum
-          </p>
-          <p class="about-text">
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molli.
+            Founded in 2019, this marketplace is a one stop place for various products and services.
+            Not only we provide world class services, we also provide excellent 24 hour customer 
+            support. Our moto is "Customer is King" and we are here to serve you.
           </p>
         </div>
       </div>
@@ -161,40 +155,40 @@
         <div class="col-md-12">
           <h3 class="section-title">Our Services</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+          <p class="section-description">We provide great services & products</p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-desktop"></i></div>
-          <h4 class="service-title"><a href="">Lorem Ipsum</a></h4>
-          <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          <h4 class="service-title"><a href="">Fitness Studio</a></h4>
+          <p class="service-description">Provides best fitness services</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
-          <h4 class="service-title"><a href="">Dolor Sitema</a></h4>
-          <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          <h4 class="service-title"><a href="">Books</a></h4>
+          <p class="service-description">Buy the best books at best price</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
-          <h4 class="service-title"><a href="">Sed ut perspiciatis</a></h4>
-          <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          <h4 class="service-title"><a href="">VR GRAD</a></h4>
+          <p class="service-description">Your one stop shop for all things Virtual Reality and Augmented Reality products sourced from trusted manufacturers</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-photo"></i></div>
-          <h4 class="service-title"><a href="">Magni Dolores</a></h4>
-          <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <h4 class="service-title"><a href="">PPM Software Solutions</a></h4>
+          <p class="service-description">Offers expertise in building & customizing software projects</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-road"></i></div>
-          <h4 class="service-title"><a href="">Nemo Enim</a></h4>
-          <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          <h4 class="service-title"><a href="">Arcade Motor Services</a></h4>
+          <p class="service-description">We service all kind of automobiles at affordable prices.</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
-          <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
-          <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          <h4 class="service-title"><a href="">Platinum County Gym</a></h4>
+          <p class="service-description">Top leader in fitness industry</p>
         </div>
       </div>
     </div>

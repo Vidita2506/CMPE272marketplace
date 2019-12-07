@@ -1,3 +1,6 @@
+*Online Marketplace*
+
+
 Thanks for downloading this theme!
 
 Theme Name: Imperial
