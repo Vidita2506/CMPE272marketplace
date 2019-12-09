@@ -5,7 +5,7 @@ if ($website_id == 1) {
   $url = "http://jsidharth.com/bookzon/getProducts.php";
 }
 if ($website_id == 2 ) {
-  $url = "http://vidita.co/getServices.php";
+  $url = "http://tejasmadappa.com/VRGrad/response.php";
 }
 if ($website_id == 3) {
   $url = "http://sruthiduvvuri.com/Users/fetch_products.php";
