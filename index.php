@@ -172,7 +172,7 @@
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
-          <h4 class="service-title"><a href="showProducts.php?website_id=4">VR GRAD</a></h4>
+          <h4 class="service-title"><a href="">VR GRAD</a></h4>
           <p class="service-description">Your one stop shop for all things Virtual Reality and Augmented Reality products sourced from trusted manufacturers</p>
         </div>
         <div class="col-md-4 service-item">
@@ -182,7 +182,7 @@
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-road"></i></div>
-          <h4 class="service-title"><a href="showProducts.php?website_id=2">Arcade Motor Services</a></h4>
+          <h4 class="service-title"><a href="">Arcade Motor Services</a></h4>
           <p class="service-description">We service all kind of automobiles at affordable prices.</p>
         </div>
         <div class="col-md-4 service-item">

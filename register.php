@@ -1,8 +1,8 @@
 <?php
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "users";
+	$servername = "sidharthjayaprakash9360963.ipagemysql.com";
+	$username = "jsidharth";
+	$password = "root123";
+	$dbname = "market_place_1";
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	
 	if(!$conn){

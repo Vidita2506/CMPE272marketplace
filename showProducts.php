@@ -11,7 +11,7 @@ if ($website_id == 3) {
   $url = "http://sruthiduvvuri.com/Users/fetch_products.php";
 }
 if ($website_id == 4 ) {
-  $url = "http://vidita.co/getServices.php";
+  $url = "http://www.sushantmathur.xyz/get_prod.php";
 }
 if ($website_id == 5) {
   $url = "http://www.mitranayak.org/mitraProducts.php";
@@ -99,9 +99,9 @@ if ($website_id == 6 ) {
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
+          <li class="menu-active"><a href="http://www.jsidharth.com/marketplace/#hero">Home</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/#about">About Us</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/#services">Services</a></li>
 
         </ul>
       </nav>
