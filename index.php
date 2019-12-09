@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Market Place</title>
+  <title>Imperial Boootstrap Template</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -59,8 +59,8 @@
           <img class="" src="img/logo.png" alt="Imperial">
         </div>
 
-        <h1>Welcome to Market Place</h1>
-        <h2>We provide <span class="rotating">Fitness services, Gym services, Automobile services, VR-AR services, Software solution, Book store services</span></h2>
+        <h1>Welcome to Imperial studios</h1>
+        <h2>We create <span class="rotating">beautiful graphics, functional websites, working mobile apps</span></h2>
         <div class="actions">
           <a href="#about" class="btn-get-started">Get Strated</a>
           <a href="#services" class="btn-services">Our Services & Products</a>
@@ -167,7 +167,7 @@
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
-          <h4 class="service-title"><a href="">Books</a></h4>
+          <h4 class="service-title"><a href="showProducts.php?website_id=1">Books</a></h4>
           <p class="service-description">Buy the best books at best price</p>
         </div>
         <div class="col-md-4 service-item">
@@ -177,7 +177,7 @@
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-photo"></i></div>
-          <h4 class="service-title"><a href="">PPM Software Solutions</a></h4>
+          <h4 class="service-title"><a href="showProducts.php?website_id=3">PPM Software Solutions</a></h4>
           <p class="service-description">Offers expertise in building & customizing software projects</p>
         </div>
         <div class="col-md-4 service-item">
@@ -187,7 +187,7 @@
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
-          <h4 class="service-title"><a href="">Platinum County Gym</a></h4>
+          <h4 class="service-title"><a href="showProducts.php?website_id=5">Platinum County Gym</a></h4>
           <p class="service-description">Top leader in fitness industry</p>
         </div>
       </div>

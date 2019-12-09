@@ -1,7 +1,25 @@
 <?php
 $website_id = $_GET["website_id"];
 
- $url = "http://vidita.co/getServices.php";
+if ($website_id == 1) {
+  $url = "http://jsidharth.com/bookzon/getProducts.php";
+}
+if ($website_id == 2 ) {
+  $url = "http://vidita.co/getServices.php";
+}
+if ($website_id == 3) {
+  $url = "http://sruthiduvvuri.com/Users/fetch_products.php";
+}
+if ($website_id == 4 ) {
+  $url = "http://vidita.co/getServices.php";
+}
+if ($website_id == 5) {
+  $url = "http://www.mitranayak.org/mitraProducts.php";
+}
+if ($website_id == 6 ) {
+  $url = "http://vidita.co/getServices.php";
+}
+
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION,1);
@@ -11,16 +29,7 @@ $website_id = $_GET["website_id"];
         'Accept: application/json'
     ));
     $result = curl_exec($ch);
-    $json = json_decode($result);
-
-    echo '<table celpadding = "0" cellspacing="0" class = "db-table">';
-    echo '<tr><th>Name</th><th>Description</th><th>Image</th>';
-    foreach($json as $object){
-        echo '<tr>';
-        echo '<td>',$object->name,'</td>';
-        echo '<td>',$object->description,'</td>';
-        echo '<td>',$object->image,'</td>';
-    }
+    //$data = json_decode($result);
+    echo $result;
     curl_close($ch);
-
 ?>
