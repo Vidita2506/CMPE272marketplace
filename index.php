@@ -162,7 +162,7 @@
       <div class="row">
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-desktop"></i></div>
-          <h4 class="service-title"><a href="">Fitness Studio</a></h4>
+          <h4 class="service-title"><a href="showProducts.php?website_id=6">Fitness Studio</a></h4>
           <p class="service-description">Provides best fitness services</p>
         </div>
         <div class="col-md-4 service-item">
