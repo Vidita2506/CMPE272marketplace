@@ -83,7 +83,6 @@
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -192,51 +191,7 @@
 
   
 
-  <!--==========================
-  Testimonials Section
-  ============================-->
-  <section id="Customer Review ">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Testimonials</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">This is what our loyal customers have to say !!! </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-            <h4>Saul Goodman</h4>
-            <span>Lawless Inc</span>
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> I have seldom experienced such an efficient help and support like from you! Thank you so much. You guys are stars!<small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Many thanks for you kind and efficient service. I have already and will definitely continue to recommend your services to others in the future. Kudos!!! <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-            <h4>Sara Wilsson</h4>
-            <span>Odeo Inc</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
+  
 
   <!--==========================
   Team Section
