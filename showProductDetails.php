@@ -30,7 +30,7 @@ if ( $website_id == 5 ) {
 
 }
 if ( $website_id == 6 ) {
-    $url = 'http://vidita.co/getServices.php';
+    $url = "http://vidita.co/getProductDetails.php?product_id=$product_id";
     $companyName = 'Fitness Studio';
 
 }
