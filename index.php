@@ -59,12 +59,9 @@
           <img class="" src="img/logo.png" alt="Imperial">
         </div>
 
-        <h1>Welcome to Imperial studios</h1>
-        <h2>We create <span class="rotating">beautiful graphics, functional websites, working mobile apps</span></h2>
-        <div class="actions">
-          <a href="#about" class="btn-get-started">Get Strated</a>
-          <a href="#services" class="btn-services">Our Services & Products</a>
-        </div>
+        <h1>Welcome to Imperial Marketplace</h1>
+        <h2>Our companies are <span class="rotating">Fitness Studio, PPM Software Solution, Arcade Motor Services, Books, VR Grad</span></h2>
+
       </div>
     </div>
   </section>
@@ -86,26 +83,8 @@
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#team">Team</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="menu-has-children"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
@@ -167,7 +146,7 @@
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
-          <h4 class="service-title"><a href="showProducts.php?website_id=1">Books</a></h4>
+          <h4 class="service-title"><a href="showProducts.php?website_id=1">Bookzon</a></h4>
           <p class="service-description">Buy the best books at best price</p>
         </div>
         <div class="col-md-4 service-item">
@@ -211,95 +190,7 @@
     </div>
   </section>
 
-  <!--==========================
-  Porfolio Section
-  ============================-->
-  <section id="portfolio">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Portfolio</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-1.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 1</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-2.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 2</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-3.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 3</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-4.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 4</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-5.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 5</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-6.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 6</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-7.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 7</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-8.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 8</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
+  
 
   <!--==========================
   Testimonials Section
