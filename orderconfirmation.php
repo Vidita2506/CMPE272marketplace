@@ -59,11 +59,30 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="http://www.jsidharth.com/marketplace/#hero">Home</a></li>
-          <li><a href="http://www.jsidharth.com/marketplace/#about">About Us</a></li>
-          <li><a href="http://www.jsidharth.com/marketplace/#services">Services</a></li>
-          <li><a href="http://www.jsidharth.com/marketplace/#team">Team</a></li>
-          <li><a href="http://www.jsidharth.com/marketplace/#contact">Contact Us</a></li>
+        <li class="menu-has-children"><a href="">Trackings</a>
+            <ul>
+              <li><a href="lastvisitedpages.php">Last Visited</a></li>
+              <li class="menu-has-children"><a href="#">Most Viewed</a>
+                <ul>
+                  <li><a href="top5_visited.php">Across All</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=1">Bookzon</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=2">VR GRAD</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=3">PPM Software Solutions</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=4">Arcade Motor Services</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=5">Platinum County Gym</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=6">Fitness Studio</a></li>
+
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="cart.php">Cart</a></li>
+          <li><a href="login.php">Login</a></li>
+          <li><a href="register.php">Sign Up</a></li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->
