@@ -102,7 +102,8 @@ if ($website_id == 6 ) {
           <li class="menu-active"><a href="http://www.jsidharth.com/marketplace/#hero">Home</a></li>
           <li><a href="http://www.jsidharth.com/marketplace/#about">About Us</a></li>
           <li><a href="http://www.jsidharth.com/marketplace/#services">Services</a></li>
-
+          <li><a href="http://www.jsidharth.com/marketplace/#team">Team</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/#contact">Contact Us</a></li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->
