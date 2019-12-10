@@ -36,7 +36,7 @@
 					echo "Passwords match";
 					$_SESSION['login_success'] = 'true';
 					$_SESSION['email'] = $email;
-					
+					header("Location: index.php");
 				}else{
 					//No match.
 					echo "Passwords do not match";

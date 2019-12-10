@@ -1,4 +1,3 @@
-
 <?php
     $servername = "sidharthjayaprakash9360963.ipagemysql.com";
     $username = "jsidharth";
