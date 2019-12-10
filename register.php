@@ -47,27 +47,27 @@
   <form method="post" action="register.php">
       <div class="input-group">
   	  <label>First Name</label>
-  	  <input type="text" name="firstname" value="first name">
+  	  <input type="text" name="firstname" placeholder="first name">
       </div>
       <div class="input-group">
   	  <label>Last Name</label>
-  	  <input type="text" name="lastname" value="last name">
+  	  <input type="text" name="lastname" placeholder="last name">
   	</div>
   	<div class="input-group">
   	  <label>Email</label>
-  	  <input type="email" name="email" value="email">
+  	  <input type="email" name="email" placeholder="email">
       </div>
       <div class="input-group">
   	  <label>Home Address</label>
-  	  <input type="text" name="address" value="address">
+  	  <input type="text" name="address" placeholder="address">
       </div>
       <div class="input-group">
   	  <label>Home Phone</label>
-  	  <input type="text" name="homephone" value="home phone">
+  	  <input type="text" name="homephone" placeholder="home phone">
       </div>
       <div class="input-group">
   	  <label>Cell Phone</label>
-  	  <input type="text" name="cellphone" value="cell phone">
+  	  <input type="text" name="cellphone" placeholder="cell phone">
       </div>
   	<div class="input-group">
   	  <label>Password</label>
