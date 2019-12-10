@@ -4,12 +4,35 @@
     $password = "root123";
     $dbname = "market_place_1";
     $conn = new mysqli($servername, $username, $password, $dbname);
-
+    $website_id = $_GET["website_id"];
+    if ($website_id == 1) {
+        $companyName = "Bookzon";
+      }
+      if ($website_id == 2 ) {
+        $companyName = "VRGRAD";
+      
+      }
+      if ($website_id == 3) {
+        $companyName = "PPM Software Solutions";
+      
+      }
+      if ($website_id == 4 ) {
+        $companyName = "Arcade Motor Services";
+      
+      }
+      if ($website_id == 5) {
+        $companyName = "Platinum County Gym";
+      
+      }
+      if ($website_id == 6 ) {
+        $companyName = "Fitness Studio";
+      
+      }
     if(!$conn){
         die("Connection failed!!!!" .mysqli_connect_error());
     }
 
-    $sql_init = "SELECT * FROM product_visits ORDER BY 'count' DESC";
+    $sql_init = "SELECT * FROM product_visits where website_id =".$website_id." ORDER BY 'count' DESC";
 
     $result = $conn->query($sql_init);
     
@@ -27,6 +50,7 @@
     $conn->close();
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -116,7 +140,7 @@
         <div class="container wow fadeInUp">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Top 5 of our most viewed products (Global) </h3>
+                    <h3 class="section-title">Top 5 of our most viewed products (<?php echo $companyName?>) </h3>
                     <div class="section-title-divider" style="margin-bottom:8%"></div>
                 </div>
             </div>
