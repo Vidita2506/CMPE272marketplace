@@ -8,6 +8,9 @@ function logout() {
 }
 function login() {
     sessionStorage.setItem("login_success", true)
+    //document.cookie = "login_success=true";
+    alert("Hi")
+    document.cookie = "email=harshrajm@gmail.com";
 }
 
 function getCookie(name)
@@ -23,7 +26,7 @@ function addToCart() {
         alert("Please login to add items to cart!");
     } else {
         const item = {
-            productname: 'Another item',
+            productname: docu,
             productprice: 10,
             quantity: Math.floor(Math.random() * Math.floor(3))
         };

@@ -90,20 +90,7 @@
             let cartHtml = '';
             let totalPrice = 0;
             if(!getCookie("login_success")) {
-                //alert("Please login!")
-                // This part is just for testing
-                sessionStorage.setItem("login_success", true)
-                const currentCart = [{
-                    productname: 'Another item',
-                    productprice: 10,
-                    quantity: Math.floor(Math.random() * 10) + 1
-                },
-                {
-                    productname: 'Onemore item',
-                    productprice: 30,
-                    quantity: Math.floor(Math.random() * 10) + 1
-                }]
-                sessionStorage.setItem("cart", JSON.stringify(currentCart))
+                alert("Please login!")
             } else {
                 if(sessionStorage.getItem('cart')){
                     currentCart = JSON.parse(sessionStorage.getItem('cart'));

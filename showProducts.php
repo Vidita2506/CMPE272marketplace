@@ -100,26 +100,43 @@ if ($website_id == 6 ) {
 <body>
   <div id="preloader"></div>
   <header id="header">
-    <div class="container">
+        <div class="container">
 
-      <div id="logo" class="pull-left">
-        <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
-        <!-- Uncomment below if you prefer to use a text image -->
-        <!--<h1><a href="#hero">Header 1</a></h1>-->
-      </div>
+            <div id="logo" class="pull-left">
+                <a href="#hero"><img src="img/logo.png" alt="" title="" /></a>
+                <!-- Uncomment below if you prefer to use a text image -->
+                <!--<h1><a href="#hero">Header 1</a></h1>-->
+            </div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="http://www.jsidharth.com/marketplace/#hero">Home</a></li>
-          <li><a href="http://www.jsidharth.com/marketplace/#about">About Us</a></li>
-          <li><a href="http://www.jsidharth.com/marketplace/#services">Services</a></li>
-          <li><a href="http://www.jsidharth.com/marketplace/#team">Team</a></li>
-          <li><a href="http://www.jsidharth.com/marketplace/#contact">Contact Us</a></li>
-        </ul>
-      </nav>
-      <!-- #nav-menu-container -->
-    </div>
-  </header>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                <li class="menu-has-children"><a href="">Trackings</a>
+            <ul>
+              <li><a href="lastvisitedpages.php">Last Visited</a></li>
+              <li class="menu-has-children"><a href="#">Most Viewed</a>
+                <ul>
+                  <li><a href="top5_visited.php">Across All</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=1">Bookzon</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=2">VR GRAD</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=3">PPM Software Solutions</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=4">Arcade Motor Services</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=5">Platinum County Gym</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=6">Fitness Studio</a></li>
+
+                </ul>
+              </li>
+            </ul>
+          </li>
+                    <li class="menu-active"><a href="http://www.jsidharth.com/marketplace/#hero">Home</a></li>
+                    <li><a href="http://www.jsidharth.com/marketplace/#about">About Us</a></li>
+                    <li><a href="http://www.jsidharth.com/marketplace/#services">Services</a></li>
+                    <li><a href="http://www.jsidharth.com/marketplace/#contact">Contact Us</a></li>
+                    <li><a href="cart.php">Cart</a></li>
+                </ul>
+            </nav>
+            <!-- #nav-menu-container -->
+        </div>
+    </header>
   <!-- #header -->
   
   <section id="portfolio">
@@ -134,7 +151,7 @@ if ($website_id == 6 ) {
 
       <div class="row">
         <div class="col-md-3">
-          <a class="portfolio-item" style='<?php echo $image[0] ?>' href="">
+          <a class="portfolio-item" style='<?php echo $image[0] ?>'  href="showProductDetails.php?website_id=<?php echo $website_id ?>&product_id=1">
             <div class="details">
               <h4><?php echo $productName[0] ?></h4>
               <span>$<?php echo $price[0] ?></span>
@@ -143,7 +160,7 @@ if ($website_id == 6 ) {
         </div>
     
         <div class="col-md-3">
-          <a class="portfolio-item" style='<?php echo $image[1] ?>' href="">
+          <a class="portfolio-item" style='<?php echo $image[1] ?>'  href="showProductDetails.php?website_id=<?php echo $website_id ?>&product_id=2">
             <div class="details">
             <h4><?php echo $productName[1] ?></h4>
               <span>$<?php echo $price[1] ?></span>
@@ -152,7 +169,7 @@ if ($website_id == 6 ) {
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style='<?php echo $image[2] ?>' href="">
+          <a class="portfolio-item" style='<?php echo $image[2] ?>'  href="showProductDetails.php?website_id=<?php echo $website_id ?>&product_id=3">
             <div class="details">
             <h4><?php echo $productName[2] ?></h4>
               <span>$<?php echo $price[2] ?></span>
@@ -161,7 +178,7 @@ if ($website_id == 6 ) {
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style='<?php echo $image[3] ?>' href="">
+          <a class="portfolio-item" style='<?php echo $image[3] ?>'  href="showProductDetails.php?website_id=<?php echo $website_id ?>&product_id=4">
             <div class="details">
             <h4><?php echo $productName[3] ?></h4>
               <span>$<?php echo $price[3] ?></span>
@@ -170,7 +187,7 @@ if ($website_id == 6 ) {
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style='<?php echo $image[4] ?>' href="">
+          <a class="portfolio-item" style='<?php echo $image[4] ?>' href="showProductDetails.php?website_id=<?php echo $website_id ?>&product_id=5">
             <div class="details">
             <h4><?php echo $productName[4] ?></h4>
               <span>$<?php echo $price[4] ?></span>
@@ -179,7 +196,7 @@ if ($website_id == 6 ) {
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style='<?php echo $image[5] ?>' href="">
+          <a class="portfolio-item" style='<?php echo $image[5] ?>'  href="showProductDetails.php?website_id=<?php echo $website_id ?>&product_id=6">
             <div class="details">
             <h4><?php echo $productName[5] ?></h4>
               <span>$<?php echo $price[5] ?></span>
@@ -188,7 +205,7 @@ if ($website_id == 6 ) {
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style='<?php echo $image[6] ?>'href="">
+          <a class="portfolio-item" style='<?php echo $image[6] ?>' href="showProductDetails.php?website_id=<?php echo $website_id ?>&product_id=7">
             <div class="details">
             <h4><?php echo $productName[6] ?></h4>
               <span>$<?php echo $price[6] ?></span>
@@ -197,7 +214,7 @@ if ($website_id == 6 ) {
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style='<?php echo $image[7] ?>' href="">
+          <a class="portfolio-item" style='<?php echo $image[7] ?>'  href="showProductDetails.php?website_id=<?php echo $website_id ?>&product_id=8">
             <div class="details">
             <h4><?php echo $productName[7] ?></h4>
               <span>$<?php echo $price[7] ?></span>
@@ -205,7 +222,7 @@ if ($website_id == 6 ) {
           </a>
         </div>
         <div class="col-md-3">
-          <a class="portfolio-item" style='<?php echo $image[8] ?>' href="">
+          <a class="portfolio-item" style='<?php echo $image[8] ?>'  href="showProductDetails.php?website_id=<?php echo $website_id ?>&product_id=9">
             <div class="details">
             <h4><?php echo $productName[8] ?></h4>
               <span>$<?php echo $price[8] ?></span>
@@ -213,7 +230,7 @@ if ($website_id == 6 ) {
           </a>
         </div> 
         <div class="col-md-3">
-          <a class="portfolio-item" style='<?php echo $image[9] ?>' href="">
+          <a class="portfolio-item" style='<?php echo $image[9] ?>'  href="showProductDetails.php?website_id=<?php echo $website_id ?>&product_id=10">
             <div class="details">
             <h4><?php echo $productName[9] ?></h4>
               <span>$<?php echo $price[9] ?></span>
