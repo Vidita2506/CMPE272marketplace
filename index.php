@@ -60,7 +60,7 @@
         </div>
 
         <h1>Welcome to Imperial Marketplace</h1>
-        <h2>Our companies are <span class="rotating">Fitness Studio, PPM Software Solution, Arcade Motor Services, Books, VR Grad</span></h2>
+        <h2>Our companies are <span class="rotating">Fitness Studio, PPM Software Solution, Arcade Motor Services, Bookszon, VR Grad, Platinum County Gym</span></h2>
 
       </div>
     </div>
