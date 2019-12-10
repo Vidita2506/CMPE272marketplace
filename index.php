@@ -277,7 +277,7 @@
         <div class="col-md-12">
           <h3 class="section-title">Contact Us</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Feel free to contact us </p>
         </div>
       </div>
 
