@@ -3,21 +3,32 @@ $website_id = $_GET["website_id"];
 
 if ($website_id == 1) {
   $url = "http://jsidharth.com/bookzon/getProducts.php";
+  $companyName = "Bookzon";
 }
 if ($website_id == 2 ) {
   $url = "http://tejasmadappa.com/VRGrad/response.php";
+  $companyName = "VRGRAD";
+
 }
 if ($website_id == 3) {
   $url = "http://sruthiduvvuri.com/Users/fetch_products.php";
+  $companyName = "PPM Software Solutions";
+
 }
 if ($website_id == 4 ) {
   $url = "http://www.sushantmathur.xyz/get_prod.php";
+  $companyName = "Arcade Motor Services";
+
 }
 if ($website_id == 5) {
   $url = "http://www.mitranayak.org/mitraProducts.php";
+  $companyName = "Platinum County Gym";
+
 }
 if ($website_id == 6 ) {
   $url = "http://vidita.co/getServices.php";
+  $companyName = "Fitness Studio";
+
 }
 
     $ch = curl_init();
@@ -115,7 +126,7 @@ if ($website_id == 6 ) {
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Products & Services</h3>
+          <h3 class="section-title">Products & Services <p style="color:blue;"> <?php echo $companyName ?> </p></h3>
           <div class="section-title-divider"></div>
           <p class="section-description">The products and services we are proud to offer </p>
         </div>
