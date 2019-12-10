@@ -20,7 +20,7 @@
 		$password = $_POST["password"];
 		$hash = sha1($password);
 
-		$sql = "SELECT * FROM $dbname WHERE email='$email'";
+		$sql = "SELECT * FROM users WHERE email='$email'";
 
 		if($result = $conn->query($sql)){
 			if(mysqli_num_rows($result) < 1 ){
@@ -31,9 +31,12 @@
 				$pass = $row['Password'];
 				if($pass == $hash){
 					//Passwords match.
+					setcookie('login_success', 'true');
+					setcookie('email', $email);
 					echo "Passwords match";
 					$_SESSION['login_success'] = 'true';
 					$_SESSION['email'] = $email;
+					
 				}else{
 					//No match.
 					echo "Passwords do not match";
@@ -61,7 +64,7 @@
   <form method="post" action="login.php">
   	<div class="input-group">
   		<label>Email</label>
-  		<input type="text" name="email" >
+  		<input type="text" name="email" id="email">
   	</div>
   	<div class="input-group">
   		<label>Password</label>
