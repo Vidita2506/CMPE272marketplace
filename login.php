@@ -1,4 +1,10 @@
 <?php
+	session_start();
+
+	if(isset($_SESSION['login_success'])){
+		header("Location: index.php");
+	}
+
 	$servername = "sidharthjayaprakash9360963.ipagemysql.com";
 	$username = "jsidharth";
 	$password = "root123";
@@ -26,6 +32,8 @@
 				if($pass == $hash){
 					//Passwords match.
 					echo "Passwords match";
+					$_SESSION['login_success'] = 'true';
+					$_SESSION['email'] = $email;
 				}else{
 					//No match.
 					echo "Passwords do not match";
@@ -35,8 +43,6 @@
 			echo "The query did not execute correctly!";
 		}
 	}
-
-
 	$conn->close();
 
 ?>
