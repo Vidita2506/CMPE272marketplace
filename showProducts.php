@@ -127,10 +127,10 @@ if ($website_id == 6 ) {
               </li>
             </ul>
           </li>
-                    <li class="menu-active"><a href="http://www.jsidharth.com/marketplace/#hero">Home</a></li>
-                    <li><a href="http://www.jsidharth.com/marketplace/#about">About Us</a></li>
-                    <li><a href="http://www.jsidharth.com/marketplace/#services">Services</a></li>
-                    <li><a href="http://www.jsidharth.com/marketplace/#contact">Contact Us</a></li>
+                    <li class="menu-active"><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                     <li><a href="cart.php">Cart</a></li>
                     <li><a href="login.php">Login</a></li>
                     <li><a href="register.php">Sign Up</a></li>
