@@ -203,7 +203,7 @@
         <div class="col-md-12">
           <h3 class="section-title">Our Team</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Meet the hard working individuals of our team.</p>
         </div>
       </div>
 
