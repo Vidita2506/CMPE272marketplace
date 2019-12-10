@@ -132,6 +132,8 @@ if ($website_id == 6 ) {
                     <li><a href="http://www.jsidharth.com/marketplace/#services">Services</a></li>
                     <li><a href="http://www.jsidharth.com/marketplace/#contact">Contact Us</a></li>
                     <li><a href="cart.php">Cart</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="register.php">Sign Up</a></li>
                 </ul>
             </nav>
             <!-- #nav-menu-container -->

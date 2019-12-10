@@ -194,6 +194,8 @@ Author URL: https://bootstrapmade.com
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
           <li><a href="cart.php">Cart</a></li>
+          <li><a href="login.php">Login</a></li>
+          <li><a href="register.php">Sign Up</a></li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->

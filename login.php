@@ -5,8 +5,8 @@
 		header("Location: index.php");
 	}
 
-	$servername = "sidharthjayaprakash9360963.ipagemysql.com";
-	$username = "jsidharth";
+	$servername = "127.0.0.1";
+	$username = "root";
 	$password = "root123";
 	$dbname = "market_place_1";
 	$conn = new mysqli($servername, $username, $password, $dbname);
