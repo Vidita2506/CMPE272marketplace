@@ -61,5 +61,8 @@ foreach ($visitedcookie as $product) {
  <a href="showProductDetailsNoTracking.php?website_id=<?=$websites[1] ?>&product_id=<?=$productids[1]?>"> <?= $products[1] ?> </a><br>
 <a href="showProductDetailsNoTracking.php?website_id=<?=$websites[2] ?>&product_id=<?=$productids[2]?>"> <?= $products[2] ?> </a><br>
 <a href="showProductDetailsNoTracking.php?website_id=<?=$websites[3] ?>&product_id=<?=$productids[3]?>"> <?= $products[3] ?> </a><br>
-<a href="showProductDetailsNoTracking.php?website_id=<?=$websites[4] ?>&product_id=<?=$productids[4]?>"> <?= $products[4] ?> </a><br>
+<a href="showProductDetailsNoTracking.php?website_id=<?=$websites[4] ?>&product_id=<?=$productids[4]?>"> <?= $products[4] ?> </a><br><br>
+
+<a href="http://www.jsidharth.com/marketplace/#hero">Home</a><br>
+
 </html>
