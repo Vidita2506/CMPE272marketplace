@@ -377,12 +377,10 @@ if ( isset( $_POST['review_form'] ) ) {
 <?php
 $decoded_result = json_decode( $reviews );
 
-echo $decoded_result;
-
-// foreach($decoded_result as $i => $i_value) {
+ foreach($decoded_result as $i => $i_value) {
 //     $user_name =  json_decode($i_value)->user_name;
-//     echo  $user_name;
-// }
+     echo  $i_value;
+}
 // for ( $i = 0; $i<i.length; $i++ ) {
 //     $user_name[$i] = json_decode( $decoded_result[$i] )->user_name;
 //     echo $user_name[$i];
