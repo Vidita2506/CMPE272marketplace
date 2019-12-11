@@ -57,6 +57,34 @@ $price = json_decode( $result ) ->price;
 // echo 'product price is '.$price;
 $reviews = json_decode( $result ) ->reviews;
 
+// Update db start!
+$servername = "sidharthjayaprakash9360963.ipagemysql.com";
+$username = "jsidharth";
+$password = "root123";
+$dbname = "market_place_1";
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if(!$conn){
+    die("Connection failed!!!!" .mysqli_connect_error());
+}
+
+$sql_init = "SELECT * FROM product_visits WHERE product_name='$productName' LIMIT 1";
+
+$result = $conn->query($sql_init);
+if($result){
+    $row = mysqli_fetch_assoc($result);
+    $current = $row['count'];
+    $current = $current + 1;
+}
+
+$sql_new = "UPDATE product_visits SET count=$current WHERE product_name='$productName'";
+
+$conn->query($sql_new);
+
+$conn->close();
+//Update db end.
+
+
 echo 'reviews'.$reviews;
 $decoded_result = json_decode( $reviews );
 for ( $i = 0; $i<10; $i++ ) {
