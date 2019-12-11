@@ -253,6 +253,8 @@ Products Section
 </p>
 </div>
 </div>
+
+<br/>
 <!-- - -->
 
 <!- -===  ===  ===  ===  ===  ===  ===  ===  ==
@@ -375,30 +377,33 @@ if ( isset( $_POST['review_form'] ) ) {
 <h3><b>Rating & Reviews</b></h3>
 
 <div>
+
 <?php
 $decoded_result = json_decode( $reviews );
 
  foreach($decoded_result as $i => $i_value) {
-//     $user_name =  json_decode($i_value)->user_name;
-     echo  $i_value;
+    $username =  json_decode($i_value)->user_name;
+    $body = json_decode($i_value)->body;
+    $rating = json_decode($i_value)->rating;
+    echo "<div class='list-group'>
+    <a href='#' class='list-group-item list-group-item-action flex-column w-300 align-items-start active'>
+    <div class='d-flex w-100 justify-content-between'>
+     <h5 class='mb-1'>Username: $username </h5>
+     <small>Rating: $rating</small>
+     </div>
+     <p class='mb-1'>Review: $body </p>
+    </a>
+    </div>";
+
 }
-// for ( $i = 0; $i<i.length; $i++ ) {
-//     $user_name[$i] = json_decode( $decoded_result[$i] )->user_name;
-//     echo $user_name[$i];
-//     $body[$i] = json_decode( $decoded_result[$i] )->body;
-//     echo $body[$i];
-//     $rating[$i] = json_decode( $decoded_result[$i] )->rating;
-//     echo $rating[$i];
-// }
+
 ?>
 </div>
 
 
-
-
 </div>
 <div class = 'col-md-10 '>
-
+<h5><b>Post your review</b></h5>
 <form method = 'post' action = ''>
 
 <div class = 'input-group'>
@@ -414,7 +419,7 @@ $decoded_result = json_decode( $reviews );
 <input type = 'text' name = 'review' value = ''>
 </div>
 <div class = 'input-group'>
-<button type = 'submit' class = 'btn' name = 'review_form'>Submit</button>
+<button type = 'submit' class="btn btn-primary" name = 'review_form'>Submit</button>
 </div>
 
 </form>
