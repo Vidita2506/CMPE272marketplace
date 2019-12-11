@@ -158,7 +158,8 @@ Author URL: https://bootstrapmade.com
             const item = {
                 productname: document.getElementById('productname').innerText.substring(14),
                 productprice: document.getElementById('productprice').innerText.substring(15),
-                quantity: document.getElementById('productquantity').value
+                quantity: document.getElementById('productquantity').value,
+                productimage: document.getElementById('productimage').src
             };
             let currentCart = [];
             let itemexists = false;
@@ -213,9 +214,9 @@ Author URL: https://bootstrapmade.com
           <li><a href="http://www.jsidharth.com/marketplace/#about">About Us</a></li>
           <li><a href="http://www.jsidharth.com/marketplace/#services">Services</a></li>
           <li><a href="http://www.jsidharth.com/marketplace/#contact">Contact Us</a></li>
-          <li><a href="cart.php">Cart</a></li>
-          <li><a href="login.php">Login</a></li>
-          <li><a href="register.php">Sign Up</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/cart.php">Cart</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/login.php">Login</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/register.php">Sign Up</a></li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->
@@ -239,7 +240,7 @@ Products Section
 <div class = 'container about-container wow fadeInUp'>
 <div class = 'row'>
 <div class="col-lg-6 about-img">
-<img src = "<?php echo $image; ?>" alt = 'image'>
+<img id="productimage" src = "<?php echo $image; ?>" alt = 'image'>
 </div>
 
 <div class = 'col-md-6 about-content'>

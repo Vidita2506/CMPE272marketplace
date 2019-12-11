@@ -103,7 +103,7 @@
                                 <div class="row" style="padding-bottom:2%">
 
                                     <div class="col-lg-2 about-img">
-                                        <img src="img/about-img.jpg" alt="">
+                                        <img src=${cartItem.productimage} alt="">
                                     </div>
 
                                     <div class="col-md-6 about-content">
