@@ -2,52 +2,52 @@
 $website_id = $_GET["website_id"];
 
 if ($website_id == 1) {
-  $url = "http://jsidharth.com/bookzon/getProducts.php";
-  $companyName = "Bookzon";
+    $url = "http://jsidharth.com/bookzon/getProducts.php";
+    $companyName = "Bookzon";
 }
-if ($website_id == 2 ) {
-  $url = "http://tejasmadappa.com/VRGrad/response.php";
-  $companyName = "VRGRAD";
+if ($website_id == 2) {
+    $url = "http://tejasmadappa.com/VRGrad/response.php";
+    $companyName = "VRGRAD";
 
 }
 if ($website_id == 3) {
-  $url = "http://sruthiduvvuri.com/Users/fetch_products.php";
-  $companyName = "PPM Software Solutions";
+    $url = "http://sruthiduvvuri.com/Users/fetch_products.php";
+    $companyName = "PPM Software Solutions";
 
 }
-if ($website_id == 4 ) {
-  $url = "http://www.sushantmathur.xyz/get_prod.php";
-  $companyName = "Arcade Motor Services";
+if ($website_id == 4) {
+    $url = "http://www.sushantmathur.xyz/prod_list.php";
+    $companyName = "Arcade Motor Services";
 
 }
 if ($website_id == 5) {
-  $url = "http://www.mitranayak.org/mitraProducts.php";
-  $companyName = "Platinum County Gym";
+    $url = "http://www.mitranayak.org/mitraProducts.php";
+    $companyName = "Platinum County Gym";
 
 }
-if ($website_id == 6 ) {
-  $url = "http://vidita.co/getServices.php";
-  $companyName = "Fitness Studio";
+if ($website_id == 6) {
+    $url = "http://vidita.co/getServices.php";
+    $companyName = "Fitness Studio";
 
 }
 
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION,1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-        'Content-Type: application/json',
-        'Accept: application/json'
-    ));
-    $result = curl_exec($ch);
-    $decoded_result= json_decode($result);
-    for($i=0;$i<10;$i++){
-      $image[$i] =  "background-image: url(".json_decode($decoded_result[$i])->product_image.");";
-      $productName[$i] = json_decode($decoded_result[$i])->product_name;
-      $prductDescripton[$i] = json_decode($decoded_result[$i])->product_description;
-      $price[$i] = json_decode($decoded_result[$i])->price;
-    }
-    curl_close($ch);
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    'Content-Type: application/json',
+    'Accept: application/json',
+));
+$result = curl_exec($ch);
+$decoded_result = json_decode($result);
+for ($i = 0; $i < 10; $i++) {
+    $image[$i] = "background-image: url(" . json_decode($decoded_result[$i])->product_image . ");";
+    $productName[$i] = json_decode($decoded_result[$i])->product_name;
+    $prductDescripton[$i] = json_decode($decoded_result[$i])->product_description;
+    $price[$i] = json_decode($decoded_result[$i])->price;
+}
+curl_close($ch);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -140,7 +140,7 @@ if ($website_id == 6 ) {
         </div>
     </header>
   <!-- #header -->
-  
+
   <section id="portfolio">
     <div class="container wow fadeInUp">
       <div class="row">
@@ -160,7 +160,7 @@ if ($website_id == 6 ) {
             </div>
           </a>
         </div>
-    
+
         <div class="col-md-3">
           <a class="portfolio-item" style='<?php echo $image[1] ?>'  href="showProductDetails.php?website_id=<?php echo $website_id ?>&product_id=2">
             <div class="details">
@@ -230,7 +230,7 @@ if ($website_id == 6 ) {
               <span>$<?php echo $price[8] ?></span>
             </div>
           </a>
-        </div> 
+        </div>
         <div class="col-md-3">
           <a class="portfolio-item" style='<?php echo $image[9] ?>'  href="showProductDetails.php?website_id=<?php echo $website_id ?>&product_id=10">
             <div class="details">
@@ -238,14 +238,14 @@ if ($website_id == 6 ) {
               <span>$<?php echo $price[9] ?></span>
             </div>
           </a>
-        </div> 
-     
+        </div>
+
 
       </div>
     </div>
   </section>
 
-  
+
   <!--==========================
   Footer
 ============================-->
