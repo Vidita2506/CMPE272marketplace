@@ -48,11 +48,10 @@ foreach ($visitedcookie as $product) {
     ) );
     $result = curl_exec( $ch );
     $productName = json_decode( $result ) ->product_name;
-    array_unshift($products, $productName);
-    array_unshift($websites, $website_id);
-    array_unshift($productids, $product_id);
+    array_push($products, $productName);
+    array_push($websites, $website_id);
+    array_push($productids, $product_id);
 }
-
 ?>
 
 <html>
