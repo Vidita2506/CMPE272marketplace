@@ -1,9 +1,11 @@
 <?php
+include 'visittracker.php';
 session_start();
 $website_id = $_GET['website_id'];
 $_SESSION['websiteid'] = $website_id;
 
 $product_id = $_GET['product_id'];
+trackVisit($website_id + "-" + $product_id);
 
 if ( $website_id == 1 ) {
     $url = "http://jsidharth.com/bookzon/getProductDetail.php?product_id=$product_id";
