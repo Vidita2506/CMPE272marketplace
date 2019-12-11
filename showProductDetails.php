@@ -5,7 +5,7 @@ $website_id = $_GET['website_id'];
 $_SESSION['websiteid'] = $website_id;
 
 $product_id = $_GET['product_id'];
-trackVisit($website_id + "-" + $product_id);
+trackVisit($website_id.'-'.$product_id);
 
 if ( $website_id == 1 ) {
     $url = "http://jsidharth.com/bookzon/getProductDetail.php?product_id=$product_id";
@@ -87,17 +87,7 @@ $conn->close();
 //Update db end.
 
 
-echo 'reviews'.$reviews;
-$decoded_result = json_decode( $reviews );
-for ( $i = 0; $i<10; $i++ ) {
-    $user_name[$i] = json_decode( $decoded_result[$i] )->user_name;
-    echo $user_name[$i];
-    $body[$i] = json_decode( $decoded_result[$i] )->body;
-    echo $body[$i];
-    $rating[$i] = json_decode( $decoded_result[$i] )->rating;
-    echo $rating[$i];
-}
-
+// echo 'reviews'.$reviews;
 // $decoded_result = json_decode( $result );
 // echo 'Decoded Result'.$decoded_result;
 curl_close( $ch );
@@ -253,12 +243,12 @@ Products Section
 </div>
 
 <div class = 'col-md-6 about-content'>
-<h2 class = 'about-title' id='productname'><?php echo $productName ?></h2>
+<h2 class = 'about-title' id='productname'><?php echo 'Product Name: '.$productName ?></h2>
 <p class = 'about-text'>
 <?php echo $productDescripton?>
 </p>
 <p class = 'about-text' id='productprice'>
-<?php echo "$".$price ?>
+<?php echo 'Product Price '."$".$price ?>
 </p>
 </div>
 </div>
@@ -382,6 +372,31 @@ if ( isset( $_POST['review_form'] ) ) {
 <div class = 'row container'>
 <div class = 'col-md-4 '>
 <h3><b>Rating & Reviews</b></h3>
+
+<div>
+<?php
+$decoded_result = json_decode( $reviews );
+
+echo $decoded_result;
+
+// foreach($decoded_result as $i => $i_value) {
+//     $user_name =  json_decode($i_value)->user_name;
+//     echo  $user_name;
+// }
+// for ( $i = 0; $i<i.length; $i++ ) {
+//     $user_name[$i] = json_decode( $decoded_result[$i] )->user_name;
+//     echo $user_name[$i];
+//     $body[$i] = json_decode( $decoded_result[$i] )->body;
+//     echo $body[$i];
+//     $rating[$i] = json_decode( $decoded_result[$i] )->rating;
+//     echo $rating[$i];
+// }
+?>
+</div>
+
+
+
+
 </div>
 <div class = 'col-md-10 '>
 
