@@ -20,7 +20,7 @@ if ( $website_id == 3 ) {
 
 }
 if ( $website_id == 4 ) {
-    $url = 'http://www.sushantmathur.xyz/get_prod.php';
+    $url = "http://sushantmathur.xyz/get_prod.php?product_id=$product_id";
     $companyName = 'Arcade Motor Services';
 
 }
@@ -235,34 +235,36 @@ Author URL: https://bootstrapmade.com
 Products Section
 ===  ===  ===  ===  ===  ===  ===  ===  ===  = -->
 <div class = 'row container'>
-<section id = 'productdetails'>
-<br/><br/>
+<section id = 'about'>
+<div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">About Product</h3>
+          <div class="section-title-divider"></div>
+        </div>
+      </div>
+    </div>
 <div class = 'container about-container wow fadeInUp'>
 <div class = 'row'>
-<div class = 'col-md-1' >
-<img src = "<?php echo $image; ?>" alt = 'image' style = 'width:350px;height:328px;'>
+<div class="col-lg-6 about-img">
+<img src = "<?php echo $image; ?>" alt = 'image'>
 </div>
-<br/><br/><br/><br/>
-<div class = 'col-md-13 about-content pull-right'>
-<h3 class = 'productdetail-name' id='productname'><?php echo 'Product Name: '.$productName ?></h3>
-<p class = 'productdetail-description'>
-<?php echo 'Product Description: '.$productDescripton?>
+
+<div class = 'col-md-6 about-content'>
+<h2 class = 'about-title' id='productname'><?php echo $productName ?></h2>
+<p class = 'about-text'>
+<?php echo $productDescripton?>
 </p>
-<p class = 'product-price' id='productprice'>
-<?php echo 'Product Price '."$".$price ?>
+<p class = 'about-text' id='productprice'>
+<?php echo "$".$price ?>
 </p>
 </div>
-</div>
-</div>
-</section>
 </div>
 <!-- - -->
 
 <!- -===  ===  ===  ===  ===  ===  ===  ===  ==
 Add to Cart Section
 ===  ===  ===  ===  ===  ===  ===  ===  ===  = -->
-
-<div class = 'p-t-33'>
 
 <form method = 'POST'>
 <div class = 'flex-w flex-r-m p-b-10'>
@@ -278,14 +280,16 @@ Add to Cart Section
 <i class = 'fs-16 zmdi zmdi-plus'></i>
 </div>
 </div>
-
-<button class = 'flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04' name = 'addtocart' type="button" onclick="addToCart()"">
+<button class="btn btn-primary" name = 'addtocart' type="button" onclick="addToCart()"">
 Add to cart
 </button>
 
 </div>
 </div>
 </form>
+</div>
+
+</section>
 </div>
 
 <!- -===  ===  ===  ===  ===  ===  ===  ===  ==
@@ -315,8 +319,23 @@ if ( isset( $_POST['review_form'] ) ) {
     $review = $_POST['review'];
 
     //API URL
+    if( $website_id == 1 ){
+        $url = 'http://jsidharth.com/bookzon/postReview.php';
+    }
     if ( $website_id == 3 ) {
         $url = 'http://sruthiduvvuri.com/Users/update_review.php';
+    }
+    if ( $website_id == 4 ) {
+        $url = "http://www.sushantmathur.xyz/postReview.php";
+    
+    }
+    if ( $website_id == 5 ) {
+        $url = "http://mitranayak.org/mitraPostReview.php";
+    
+    }
+    if ( $website_id == 6 ) {
+        $url = "http://vidita.co/insertReview.php";
+    
     }
 
     //create a new cURL resource
