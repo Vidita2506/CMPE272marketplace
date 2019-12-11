@@ -25,7 +25,7 @@ if ( $website_id == 4 ) {
 
 }
 if ( $website_id == 5 ) {
-    $url = "http://www.mitranayak.org/mitraProducts.php?product_id=$product_id";
+    $url = "http://www.mitranayak.org/mitraSingleProduct.php?product_id=$product_id";
     $companyName = 'Platinum County Gym';
 
 }
