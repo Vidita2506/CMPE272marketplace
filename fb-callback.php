@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once 'fb_lib/php_sdk/src/Facebook/autoload.php';
 $fb = new Facebook\Facebook([
   'app_id' => '482620352387135', // Replace {app-id} with your app id
   'app_secret' => 'bf2828ce3eeec15a2b702d504d7c3c95',
@@ -70,17 +71,20 @@ if (! $accessToken->isLongLived()) {
   var_dump($accessToken->getValue());
 }
 
+try {
+  // Returns a `Facebook\FacebookResponse` object
+  $response = $fb->get('/me?fields=id,name', '$accessToken->getValue()');
+} catch(Facebook\Exceptions\FacebookResponseException $e) {
+  echo 'Graph returned an error: ' . $e->getMessage();
+  exit;
+} catch(Facebook\Exceptions\FacebookSDKException $e) {
+  echo 'Facebook SDK returned an error: ' . $e->getMessage();
+  exit;
+}
 
-$fb->setDefaultAccessToken($_SESSION['facebook_access_token']);
-$response = $fb->get('/me?locale=en_US&fields=name,email');
-$userNode = $response->getGraphUser();
-var_dump(
-    $userNode->getField('email'), $userNode['email']
-);
+$user = $response->getGraphUser();
 
-$_SESSION['fb_access_token'] = (string) $accessToken;
-setcookie('login_success', 'true');
-setcookie('email', $userNode->getField('email'));
+echo 'Name: ' . $user['name'];
 
 // User is logged in with a long-lived access token.
 // You can redirect them to a members-only page.
