@@ -9,7 +9,7 @@
         die("Connection failed!!!!" .mysqli_connect_error());
     }
 
-    $sql_init = "SELECT * FROM product_visits ORDER BY 'count' DESC";
+    $sql_init = "SELECT * FROM product_visits ORDER BY count DESC";
 
     $result = $conn->query($sql_init);
     

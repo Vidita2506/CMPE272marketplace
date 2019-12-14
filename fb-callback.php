@@ -8,6 +8,11 @@ $fb = new Facebook\Facebook([
 
 $helper = $fb->getRedirectLoginHelper();
 
+if (isset($_GET['state'])) { 
+  $helper->getPersistentDataHandler()->set('state', $_GET['state']); 
+}
+
+
 try {
   $accessToken = $helper->getAccessToken();
 } catch(Facebook\Exceptions\FacebookResponseException $e) {
@@ -65,7 +70,17 @@ if (! $accessToken->isLongLived()) {
   var_dump($accessToken->getValue());
 }
 
+
+$fb->setDefaultAccessToken($_SESSION['facebook_access_token']);
+$response = $fb->get('/me?locale=en_US&fields=name,email');
+$userNode = $response->getGraphUser();
+var_dump(
+    $userNode->getField('email'), $userNode['email']
+);
+
 $_SESSION['fb_access_token'] = (string) $accessToken;
+setcookie('login_success', 'true');
+setcookie('email', $userNode->getField('email'));
 
 // User is logged in with a long-lived access token.
 // You can redirect them to a members-only page.
