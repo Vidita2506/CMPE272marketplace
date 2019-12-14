@@ -394,19 +394,22 @@ if (isset($_POST['review_form']) && $_COOKIE['login_success'] == 'true') {
                     <h5><b>Post your review</b></h5>
                     <div id="errormessage"></div>
                     <form method='post' action=''  role="form" class="contactForm"> 
-                        <div class='input-group'>
+                        <div class='form-group'>
                             <label>Email</label>
                             <input type='email' name='email' value='' class="form-control" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
                         </div>
-                        <div class='input-group'>
+                        <div class='form-group'>
                             <label>Rating</label>
                             <input type='number' name='rating' value=''  class="form-control" placeholder="Your Rating" data-rule="minlen:1" data-msg="Please enter your Rating" />
+                            <div class="validation"></div>
                         </div>
-                        <div class='input-group'>
+                        <div class='form-group'>
                             <label>Review</label>
                             <input type='text' name='review' value='' class="form-control" placeholder="Your Review" data-rule="minlen:1" data-msg="Please enter your Review" />
+                            <div class="validation"></div>
                         </div>
-                        <div class='input-group'>
+                        <div class='form-group'>
                             <button type='submit' class=" btn btn-primary" name='review_form'>Submit</button>
                         </div>
                     </form>
