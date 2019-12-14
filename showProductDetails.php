@@ -187,42 +187,46 @@ Author URL: https://bootstrapmade.com
     </script>
     <div id='preloader'></div>
     <header id="header">
-        <div class="container">
+    <nav id="nav-menu-container">
+        <ul class="nav-menu">
+        <li class="menu-has-children"><a href="">Trackings</a>
+            <ul>
+              <li><a href="lastvisitedpages.php">Last Visited</a></li>
+              <li class="menu-has-children"><a href="#">Most Viewed</a>
+                <ul>
+                  <li><a href="top5_visited.php">Across All</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=1">Bookzon</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=2">VR GRAD</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=3">PPM Software Solutions</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=4">Arcade Motor Services</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=5">Platinum County Gym</a></li>
+                  <li><a href="top5VisitedIndividual.php?website_id=6">Fitness Studio</a></li>
 
-            <div id="logo" class="pull-left">
-                <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
-                <!-- Uncomment below if you prefer to use a text image -->
-                <!--<h1><a href="#hero">Header 1</a></h1>-->
-            </div>
-
-            <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="menu-has-children"><a href="">Trackings</a>
-                        <ul>
-                            <li><a href="lastvisitedpages.php">Last Visited</a></li>
-                            <li class="menu-has-children"><a href="#">Most Viewed</a>
-                                <ul>
-                                    <li><a href="top5_visited.php">Across All</a></li>
-                                    <li><a href="top5VisitedIndividual.php?website_id=1">Bookzon</a></li>
-                                    <li><a href="top5VisitedIndividual.php?website_id=2">VR GRAD</a></li>
-                                    <li><a href="top5VisitedIndividual.php?website_id=3">PPM Software Solutions</a></li>
-                                    <li><a href="top5VisitedIndividual.php?website_id=4">Arcade Motor Services</a></li>
-                                    <li><a href="top5VisitedIndividual.php?website_id=5">Platinum County Gym</a></li>
-                                    <li><a href="top5VisitedIndividual.php?website_id=6">Fitness Studio</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-active"><a href="http://www.jsidharth.com/marketplace/#hero">Home</a></li>
-                    <li><a href="http://www.jsidharth.com/marketplace/#about">About Us</a></li>
-                    <li><a href="http://www.jsidharth.com/marketplace/#services">Services</a></li>
-                    <li><a href="http://www.jsidharth.com/marketplace/#contact">Contact Us</a></li>
-                    <li><a href="http://www.jsidharth.com/marketplace/cart.php">Cart</a></li>
-                    <li><a href="http://www.jsidharth.com/marketplace/login.php">Login</a></li>
-                    <li><a href="http://www.jsidharth.com/marketplace/register.php">Sign Up</a></li>
                 </ul>
-            </nav>
+              </li>
+              <li class="menu-has-children"><a href="#">Top Ratings</a>
+                <ul>
+                  <li><a href="top5ByRatingIndividual.php?website_id=1">Bookzon</a></li>
+                  <li><a href="top5ByRatingIndividual.php?website_id=2">VR GRAD</a></li>
+                  <li><a href="top5ByRatingIndividual.php?website_id=3">PPM Software Solutions</a></li>
+                  <li><a href="top5ByRatingIndividual.php?website_id=4">Arcade Motor Services</a></li>
+                  <li><a href="top5ByRatingIndividual.php?website_id=5">Platinum County Gym</a></li>
+                  <li><a href="top5ByRatingIndividual.php?website_id=6">Fitness Studio</a></li>
+
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-active"><a href="http://www.jsidharth.com/marketplace/#hero">Home</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/#about">About Us</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/#services">Services</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/#contact">Contact Us</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/cart.php">Cart</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/login.php">Login</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/register.php">Sign Up</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/logout.php">Log Out</a></li>
+        </ul>
+      </nav>
             <!-- #nav-menu-container -->
         </div>
     </header>
