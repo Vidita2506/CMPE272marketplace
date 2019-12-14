@@ -210,7 +210,7 @@
           <div class="info">
             <div>
               <i class="fa fa-map-marker"></i>
-              <p>SJSU State University<br>California, CA 95112</p>
+              <p>San Jose State University<br>California, CA 95112</p>
             </div>
 
             <div>
