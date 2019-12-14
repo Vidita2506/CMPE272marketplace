@@ -179,6 +179,23 @@ Author URL: https://bootstrapmade.com
             }
             sessionStorage.setItem("cart", JSON.stringify(currentCart))
         }
+    
+        function increaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('number').value = value;
+        }
+
+        function decreaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value < 1 ? value = 1 : '';
+        value--;
+        document.getElementById('number').value = value;
+        }
+
+        
     }
 </script>
 <div id = 'preloader'></div>
@@ -269,12 +286,13 @@ Add to Cart Section
 <i class = 'fs-16 zmdi zmdi-minus'></i>
 </div>
 
-<input class = 'mtext-104 cl3 txt-center ' type = 'number' id= 'productquantity' name = 'num-product' value = '1'>
+<!-- <input class = 'mtext-104 cl3 txt-center ' type = 'number' id= 'productquantity' name = 'num-product' value = '1'> -->
 
-<div class = 'btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m'>
-<i class = 'fs-16 zmdi zmdi-plus'></i>
-</div>
-</div>
+<form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type = 'number' id= 'productquantity' name = 'num-product' value = '1' />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+</form>
 <button class="btn btn-primary" name = 'addtocart' type="button" onclick="addToCart()"">
 Add to cart
 </button>
@@ -404,19 +422,22 @@ $decoded_result = json_decode( $reviews );
 </div>
 <div class = 'col-md-10 '>
 <h5><b>Post your review</b></h5>
-<form method = 'post' action = ''>
-
+<div id="errormessage"></div>
+<form method = 'post' action = '' role="form" class="contactForm">
 <div class = 'input-group'>
 <label>Email</label>
-<input type = 'email' name = 'email' value = ''>
+<input type = 'email' name = 'email' value = '' class="form-control" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"/>
+<div class="validation"></div>
 </div>
 <div class = 'input-group'>
 <label>Rating</label>
-<input type = 'text' name = 'rating' value = ''>
+<input type = 'number' name = 'rating' value = '' class="form-control" placeholder="Your rating" data-rule="minlen:1"  data-msg="Please enter rating"/>
+<div class="validation"></div>
 </div>
 <div class = 'input-group'>
 <label>Review</label>
-<input type = 'text' name = 'review' value = ''>
+<input type = 'text' name = 'review' value = '' class="form-control" placeholder="Your Review" data-rule="minlen:1"  data-msg="Please enter Review" />
+<div class="validation"></div>
 </div>
 <div class = 'input-group'>
 <button type = 'submit' class="btn btn-primary" name = 'review_form'>Submit</button>
