@@ -104,6 +104,7 @@
           <li><a href="http://www.jsidharth.com/marketplace/cart.php">Cart</a></li>
           <li><a href="http://www.jsidharth.com/marketplace/login.php">Login</a></li>
           <li><a href="http://www.jsidharth.com/marketplace/register.php">Sign Up</a></li>
+          <li><a href="http://www.jsidharth.com/marketplace/logout.php">Log Out</a></li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->

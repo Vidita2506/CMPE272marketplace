@@ -1,6 +1,7 @@
 <?php
 	session_start();
 
+        ob_start();
 	if(isset($_SESSION['login_success'])){
 		header("Location: index.php");
 	}
@@ -19,13 +20,17 @@
 		$email = $_POST["email"];
 		$password = $_POST["password"];
 		$hash = sha1($password);
+                $login = false;
 
 		$sql = "SELECT * FROM users WHERE email='$email'";
 
 		if($result = $conn->query($sql)){
 			if(mysqli_num_rows($result) < 1 ){
 				//ERROR OUT
-				echo "No such user";
+				//echo "No such user";
+                                echo '<script language="javascript">';
+                                echo 'alert("No such user, please register first!")';
+                                echo '</script>';
 			}else{
 				$row = mysqli_fetch_array($result);
 				$pass = $row['Password'];
@@ -37,9 +42,13 @@
 					$_SESSION['login_success'] = 'true';
 					$_SESSION['email'] = $email;
 					header("Location: index.php");
+                                        $login = true;
 				}else{
 					//No match.
-					echo "Passwords do not match";
+					//echo "Passwords do not match";
+                                        echo '<script language="javascript">';
+                                        echo 'alert("Password is incorrect!")';
+                                        echo '</script>';
 				}
 			}
 		}else{
@@ -47,7 +56,6 @@
 		}
 	}
 	$conn->close();
-
 ?>
 
 <!DOCTYPE html>
