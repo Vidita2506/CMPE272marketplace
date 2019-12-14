@@ -308,7 +308,6 @@ if (isset($_POST['review_form']) && $_COOKIE['login_success'] == 'true') {
     $email = $_POST['email'];
     $rating = $_POST['rating'];
     $review = $_POST['review'];
-
     //API URL
     if ($website_id == 1) {
         $url = 'http://jsidharth.com/bookzon/postReview.php';
@@ -357,6 +356,8 @@ if (isset($_POST['review_form']) && $_COOKIE['login_success'] == 'true') {
         echo '<script language="javascript">';
             echo 'alert("Review Posted!")';
             echo '</script>';
+        
+            echo "<meta http-equiv='refresh' content='0'>";
     }
 
     //close cURL resource
@@ -396,17 +397,17 @@ if (isset($_POST['review_form']) && $_COOKIE['login_success'] == 'true') {
                     <form method='post' action=''  role="form" class="contactForm"> 
                         <div class='form-group'>
                             <label>Email</label>
-                            <input type='email' name='email' value='' class="form-control" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <input type='email' name='email' value='' class="form-control" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
                             <div class="validation"></div>
                         </div>
                         <div class='form-group'>
                             <label>Rating</label>
-                            <input type='number' name='rating' value=''  class="form-control" placeholder="Your Rating" data-rule="minlen:1" data-msg="Please enter your Rating" />
+                            <input type='number' name='rating' value=''  class="form-control" placeholder="Your Rating" data-rule="minlen:1" data-msg="Please enter your Rating" required />
                             <div class="validation"></div>
                         </div>
                         <div class='form-group'>
                             <label>Review</label>
-                            <input type='text' name='review' value='' class="form-control" placeholder="Your Review" data-rule="minlen:1" data-msg="Please enter your Review" />
+                            <input type='text' name='review' value='' class="form-control" placeholder="Your Review" data-rule="minlen:1" data-msg="Please enter your Review" required />
                             <div class="validation"></div>
                         </div>
                         <div class='form-group'>
@@ -434,7 +435,6 @@ if (isset($_POST['review_form']) && $_COOKIE['login_success'] == 'true') {
             <!-- Template Specisifc Custom Javascript File -->
             <script src='js/custom.js'></script>
 
-            <script src='contactform/contactform.js'></script>
 
 </body>
 
