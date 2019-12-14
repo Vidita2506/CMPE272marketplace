@@ -5,7 +5,7 @@ $website_id = $_GET['website_id'];
 $_SESSION['websiteid'] = $website_id;
 
 $product_id = $_GET['product_id'];
-trackVisit($website_id . '-' . $product_id);
+trackVisit($website_id.'-'.$product_id);
 
 if ($website_id == 1) {
     $url = "http://jsidharth.com/bookzon/getProductDetail.php?product_id=$product_id";
@@ -38,23 +38,23 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
     'Content-Type: application/json',
-    'Accept: application/json',
+    'Accept: application/json'
 ));
 $result = curl_exec($ch);
 //echo 'Result is '.$result;
-$productName = json_decode($result)->product_name;
+$productName = json_decode($result) ->product_name;
 $_SESSION['productname'] = $productName;
 // echo 'product name is '.$productName;
-$productDescripton = json_decode($result)->product_description;
+$productDescripton = json_decode($result) ->product_description;
 // echo 'product description is '.$productDescripton;
 $image1 = json_decode($result)->product_image;
-$image = "background-image: url(" . $image1 . ");";
+$image =  "background-image: url(".$image1.");";
 
 // echo $image;
 
-$price = json_decode($result)->price;
+$price = json_decode($result) ->price;
 // echo 'product price is '.$price;
-$reviews = json_decode($result)->reviews;
+$reviews = json_decode($result) ->reviews;
 
 // Update db start!
 $servername = "sidharthjayaprakash9360963.ipagemysql.com";
@@ -64,7 +64,7 @@ $dbname = "market_place_1";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if (!$conn) {
-    die("Connection failed!!!!" . mysqli_connect_error());
+    die("Connection failed!!!!" .mysqli_connect_error());
 }
 
 $sql_init = "SELECT * FROM product_visits WHERE product_name='$productName' LIMIT 1";
@@ -82,6 +82,7 @@ $conn->query($sql_new);
 
 $conn->close();
 //Update db end.
+
 
 // echo 'reviews'.$reviews;
 // $decoded_result = json_decode( $result );
@@ -152,7 +153,6 @@ Author URL: https://bootstrapmade.com
             if (!getCookie("login_success")) {
                 alert("Please login to add items to cart!");
             } else {
-                console.log(document.getElementById('productimage').value)
                 const item = {
                     productname: document.getElementById('productname').innerText.substring(14),
                     productprice: document.getElementById('productprice').innerText.substring(15),
@@ -178,7 +178,6 @@ Author URL: https://bootstrapmade.com
                 sessionStorage.setItem("cart", JSON.stringify(currentCart))
             }
         }
-
         function checkLogin() {
             if (!getCookie("login_success")) {
                 alert("Please login to post review!");
@@ -242,18 +241,18 @@ Author URL: https://bootstrapmade.com
             </div>
             <div class='container about-container wow fadeInUp'>
                 <div class='row'>
-                    <div class="col-md-6 about-img" style="text-align:right" >
-                    <a class=" portfolio-item"   style='<?php echo $image ?>; height:400px' ></a>
-                        <!-- <img class="portfolio-item" id="productimage" style ="max-height: 500px;height:50%"src="<?php echo $image; ?>" alt='image'> -->
+                    <div class="col-md-6 about-img" style="text-align:right">
+                    <a  class=" portfolio-item" style='<?php echo $image ?>; height:400px' ></a>
+                        <!-- <img id="productimage" style ="max-height: 500px;height:50%"src="<?php echo $image; ?>" alt='image'> -->
                     </div>
 
                     <div class='col-md-6 about-content'>
-                        <h2 class='about-title' id='productname'><?php echo 'Product Name: ' . $productName ?></h2>
+                        <h2 class='about-title' id='productname'><?php echo 'Product Name: '.$productName ?></h2>
                         <p class='about-text'>
-                            <?php echo $productDescripton ?>
+                            <?php echo $productDescripton?>
                         </p>
                         <p class='about-text' id='productprice'>
-                            <?php echo 'Product Price ' . "$" . $price ?>
+                            <?php echo 'Product Price '."$".$price ?>
                         </p>
 
                         <form method='POST'>
@@ -295,7 +294,7 @@ $website_id = '';
 $productName = '';
 $email = '';
 $rating = '';
-$review = '';
+$review    = '';
 $errors = array();
 
 $productName = $_SESSION['productname'];
@@ -332,7 +331,7 @@ if (isset($_POST['review_form']) && $_COOKIE['login_success'] == 'true') {
 
     //setup request to send json via POST
     $myObj->product_name = $productName;
-    $myObj->body = $review;
+    $myObj->body = $review ;
     $myObj->email = $email;
     $myObj->user_name = $email;
     $myObj->rating = $rating;
@@ -346,7 +345,7 @@ if (isset($_POST['review_form']) && $_COOKIE['login_success'] == 'true') {
     curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
 
     //set the content type to application/json
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array( 'Content-Type:application/json' ));
 
     //return response instead of outputting
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -356,8 +355,8 @@ if (isset($_POST['review_form']) && $_COOKIE['login_success'] == 'true') {
 
     if (isset($result)) {
         echo '<script language="javascript">';
-        echo 'alert("Review Posted!")';
-        echo '</script>';
+            echo 'alert("Review Posted!")';
+            echo '</script>';
     }
 
     //close cURL resource
@@ -368,35 +367,33 @@ if (isset($_POST['review_form']) && $_COOKIE['login_success'] == 'true') {
             <div class='container wow fadeInUp'>
                 <div class='col-md-12 '>
                     <h3><b>Rating & Reviews</b></h3>
-
                     <div>
-
                         <?php
-$decoded_result = json_decode($reviews);
+                        $decoded_result = json_decode($reviews);
 
-foreach ($decoded_result as $i => $i_value) {
-    $username = json_decode($i_value)->user_name;
-    $body = json_decode($i_value)->body;
-    $rating = json_decode($i_value)->rating;
-    echo "<div class='list-group'>
-    <a href='#' class='list-group-item list-group-item-action flex-column w-300 align-items-start active'>
-    <div class='d-flex w-100 justify-content-between'>
-     <h5 class='mb-1' style='padding-bottom:0;margin-bottom:0'>Username: $username </h5>
-     <small>Rating: $rating</small>
-     </div>
-     <p class='mb-1' style='padding-bottom:0;margin-bottom:0'>Review: $body </p>
-    </a>
-    </div>";
-}
-
-?>
+                        foreach ($decoded_result as $i => $i_value) {
+                            $username =  json_decode($i_value)->user_name;
+                            $body = json_decode($i_value)->body;
+                            $rating = json_decode($i_value)->rating;
+                            echo "<div class='list-group'>
+                            <a href='#' class='list-group-item list-group-item-action flex-column w-300 align-items-start active'>
+                            <div class='d-flex w-100 justify-content-between'>
+                            <h5 class='mb-1' style='padding-bottom:0;margin-bottom:0'>Username: $username </h5>
+                            <small>Rating: $rating</small>
+                            </div>
+                            <p class='mb-1' style='padding-bottom:0;margin-bottom:0'>Review: $body </p>
+                            </a>
+                            </div>";
+                        }
+                        ?>
                     </div>
 
-
                 </div>
+
                 <div class='col-md-10 '>
                     <h5><b>Post your review</b></h5>
-                    <form method='post' action=''>
+
+                    <form method='post' action=''  role="form" class="contactForm">
 
                         <div class='input-group'>
                             <label>Email</label>
@@ -411,11 +408,12 @@ foreach ($decoded_result as $i => $i_value) {
                             <input type='text' name='review' value=''>
                         </div>
                         <div class='input-group'>
-                            <button type='submit' class=" btn btn-primary" name='review_form' onclick="checkLogin()">Submit</button>
+                            <button type='submit' class=" btn btn-primary" name='review_form'>Submit</button>
                         </div>
 
                     </form>
                 </div>
+
             </div>
 
             <!-- #products -->
