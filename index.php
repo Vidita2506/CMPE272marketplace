@@ -95,6 +95,17 @@
 
                 </ul>
               </li>
+              <li class="menu-has-children"><a href="#">Top Ratings</a>
+                <ul>
+                  <li><a href="top5ByRatingIndividual.php?website_id=1">Bookzon</a></li>
+                  <li><a href="top5ByRatingIndividual.php?website_id=2">VR GRAD</a></li>
+                  <li><a href="top5ByRatingIndividual.php?website_id=3">PPM Software Solutions</a></li>
+                  <li><a href="top5ByRatingIndividual.php?website_id=4">Arcade Motor Services</a></li>
+                  <li><a href="top5ByRatingIndividual.php?website_id=5">Platinum County Gym</a></li>
+                  <li><a href="top5ByRatingIndividual.php?website_id=6">Fitness Studio</a></li>
+
+                </ul>
+              </li>
             </ul>
           </li>
           <li class="menu-active"><a href="http://www.jsidharth.com/marketplace/#hero">Home</a></li>
@@ -193,23 +204,6 @@
   </section>
 
   <!--==========================
-  Subscrbe Section
-  ============================-->
-  <section id="subscribe">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-8">
-          <h3 class="subscribe-title">Subscribe For Updates</h3>
-          <p class="subscribe-text">Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
-        </div>
-        <div class="col-md-4 subscribe-btn-container">
-          <a class="subscribe-btn" href="#">Subscribe Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--==========================
   Contact Section
   ============================-->
   <section id="contact">
@@ -227,17 +221,17 @@
           <div class="info">
             <div>
               <i class="fa fa-map-marker"></i>
-              <p>A108 Adam Street<br>New York, NY 535022</p>
+              <p>San Jose State University<br>California, CA 95112</p>
             </div>
 
             <div>
               <i class="fa fa-envelope"></i>
-              <p>info@example.com</p>
+              <p>admin@imperial.com</p>
             </div>
 
             <div>
               <i class="fa fa-phone"></i>
-              <p>+1 5589 55488 55s</p>
+              <p>+1 777 777 7777</p>
             </div>
 
           </div>
