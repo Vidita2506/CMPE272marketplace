@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once 'src/Facebook/autoload.php';
+    require_once 'fb_lib/php_sdk/src/Facebook/autoload.php';
 	$fb = new Facebook\Facebook([
 		'app_id' => '482620352387135', // Replace {app-id} with your app id
 		'app_secret' => 'bf2828ce3eeec15a2b702d504d7c3c95',
