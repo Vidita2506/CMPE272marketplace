@@ -9,7 +9,7 @@ if ($website_id == 1) {
     $companyName = 'Bookzon';
 }
 if ($website_id == 2) {
-    $url = 'http://tejasmadappa.com/VRGrad/getProductDetail.php';
+    $url = 'http://tejasmadappa.com/VRGrad/getProductDetail.php?product_id=';
     $companyName = 'VRGRAD';
 }
 if ($website_id == 3) {
