@@ -316,6 +316,9 @@ if (isset($_POST['review_form']) && $_COOKIE['login_success'] == 'true') {
     if ($website_id == 1) {
         $url = 'http://jsidharth.com/bookzon/postReview.php';
     }
+    if ($website_id == 2) {
+        $url = 'http://tejasmadappa.com/VRGrad/request.php';
+    }
     if ($website_id == 3) {
         $url = 'http://sruthiduvvuri.com/Users/update_review.php';
     }
