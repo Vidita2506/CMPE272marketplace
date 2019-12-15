@@ -257,7 +257,7 @@ Author URL: https://bootstrapmade.com
                             <?php echo $productDescripton?>
                         </p>
                         <p class='about-text' id='productprice'>
-                            <?php echo 'Product Price '."$".$price ?>
+                           <b> <?php echo 'Product Price '."$".$price ?> </b>
                         </p>
 
                         <form method='POST'>
