@@ -1,7 +1,22 @@
 <?php
 	session_start();
+	require_once 'fb_lib/php_sdk/src/Facebook/autoload.php';
+	$fb = new Facebook\Facebook([
+		'app_id' => '482620352387135', // Replace {app-id} with your app id
+		'app_secret' => 'bf2828ce3eeec15a2b702d504d7c3c95',
+		'default_graph_version' => 'v3.2',
+	]);
 
-        ob_start();
+	$helper = $fb->getRedirectLoginHelper();
+
+	$permissions = ['email']; // Optional permissions
+	$loginUrl = $helper->getLoginUrl('https://www.jsidharth.com/marketplace/fb-callback.php', $permissions);
+
+	//echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
+	
+      // $fb_url = ' . htmlspecialchars($loginUrl) . ';
+
+    ob_start();
 	if(isset($_SESSION['login_success'])){
 		header("Location: index.php");
 	}
@@ -80,7 +95,12 @@
   	</div>
   	<div class="input-group">
   		<button type="submit" class="btn" name="login_user">Login</button>
+   	</div>
+
+        <div class="input-group">
+               <?php echo '<a href="' . htmlspecialchars($loginUrl) . '">Login with Facebook</a>' ?>
   	</div>
+
   	<p>
   		Not yet a member? <a href="register.php">Sign up</a>
   	</p>
