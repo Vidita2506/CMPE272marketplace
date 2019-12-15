@@ -409,7 +409,7 @@ if (isset($_POST['review_form']) && $_COOKIE['login_success'] == 'true') {
                         </div>
                         <div class='form-group'>
                             <label>Rating</label>
-                            <input type='number' name='rating' value=''  class="form-control" placeholder="Your Rating" data-rule="minlen:1" data-msg="Please enter your Rating" required />
+                            <input type='number' name='rating' value=''  class="form-control" placeholder="Your Rating" data-rule="minlen:1" data-msg="Please enter your Rating"   min="0" max="5" required />
                             <div class="validation"></div>
                         </div>
                         <div class='form-group'>
@@ -418,7 +418,7 @@ if (isset($_POST['review_form']) && $_COOKIE['login_success'] == 'true') {
                             <div class="validation"></div>
                         </div>
                         <div class='form-group'>
-                            <button type='submit' class=" btn btn-primary" name='review_form'>Submit</button>
+                            <button type='submit' class=" btn btn-primary" name='review_form' onclick="checkLogin()" >Submit</button>
                         </div>
                     </form>
                 </div>
