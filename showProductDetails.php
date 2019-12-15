@@ -174,6 +174,7 @@ Author URL: https://bootstrapmade.com
                 }
                 if (!itemexists) {
                     currentCart.push(item);
+                    alert("Item added to the cart!");
                 }
                 sessionStorage.setItem("cart", JSON.stringify(currentCart))
             }
@@ -261,25 +262,28 @@ Author URL: https://bootstrapmade.com
 
                         <form method='POST'>
                             <div class="col-md-6">
+                                  <!-- Added hidden field to get the value of product image -->
+                                  <div>
+                                  <input type="hidden" class='mtext-104 cl3 txt-center ' id="productimage"
+                                     value="<?php echo $image1; ?>">
+                                 </div>
+
                                 <div class='btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m'>
                                     <i class='fs-16 zmdi zmdi-minus'></i>
                                 </div>
 
                                 <input class='mtext-104 cl3 txt-center ' type='number' id='productquantity'
-                                    name='num-product' value='1' />
+                                    name='num-product' value='1' min="0" />
 
                                 <div class='btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m'>
                                     <i class='fs-16 zmdi zmdi-plus'></i>
                                 </div>
-                                <!-- Added hidden field to get the value of product image -->
-                                <input type="hidden" class='mtext-104 cl3 txt-center ' id="productimage"
-                                     value="<?php echo $image1; ?>">
-                            </div>
-                            <div class="col-md-6">
+                              
+
                                 <button class="btn btn-primary" name='addtocart' type="button" onclick="addToCart()">Add
                                     to
                                     cart</button>
-                            </div>
+                         
                         </form>
                     </div>
                 </div>
